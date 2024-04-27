@@ -14,6 +14,6 @@ class MovieDbDatasource extends MoviesDatasource {
   Future<List<Movie>> getNowPlaying({int page = 1}) async {
     final res = await dio.get('/movie/noew_playing');
     final List<Movie> movies = [];
-    return [];
+    return movies;
   }
 }
